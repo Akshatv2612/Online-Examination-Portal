@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .common{
+            margin: 8px;
+            padding: 15px;
+            border: 1px black solid;
+            border-radius:  6px;
+            background-color: rgb(155, 196, 193);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-block">
+        <h1>Welcome to our website</h1>
+        <div class="contact">
+            <h3>Contact us form:</h3>
+            <form action="https://www.google.com/" id="contact_form">
+                <div class="common">
+                    <lable for="name">Name: </lable>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="common" id="phonee">
+                    <lable for="phone">Phone:</lable>
+                    <input type="tel" id="phone" name="phone" placeholder="+91" required>
+                </div>
+
+                <div class="common">
+                    <lable for="email">Email: </lable>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="common">
+                    <lable for="name">Gender: </lable>
+                    <select name="gender" id="gender" form="contact_form" required>
+                        <option value="Male">male</option>
+                        <option value="Female">female</option>
+                    </select>
+                </div>
+
+                <div class="common">
+                    <lable for="dob">Date of Birth</lable>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+
+                <div class="common">
+                    <p>Select your course:</p>
+                    <input type="checkbox" name="course" id="webd" value="Web developement">
+                    <label for="webd">Web development</label>
+                    <br>
+                    <input type="checkbox" name="course" id="DSA" value="DSA">
+                    <label for="DSA">DSA</label>
+                    <br>
+                    <input type="checkbox" name="course" id="C++" value="C++ Baics">
+                    <label for="C++">C++ Basics</label>
+                </div>
+
+                <div class="common" id="rating">
+                    <p>Ratings</p>
+                    <lable for="rating1">1</lable>
+                    <input type="radio" name="rating" id="rating1" value="1">
+                    <lable for="rating2">2</lable>
+                    <input type="radio" name="rating" id="rating2" value="2">
+                    <lable for="rating3">3</lable>
+                    <input type="radio" name="rating" id="rating3" value="3">
+                    <lable for="rating4">4</lable>
+                    <input type="radio" name="rating" id="rating4" value="4">
+                    <lable for="rating5">5</lable>
+                    <input type="radio" name="rating" id="rating5" value="5">
+                </div>
+
+                <div class="slider">
+
+                </div>
+
+                <div class="common" id="writeee">
+                    <p><label for="write" id="writeee_p">Write something</label></p> <!--We have used <p> here since label is inline element therefore box will stick beside label.-->
+                    <textarea id="write" name="write" rows="5" cols="20">Write some extra info which you want to write.</textarea>
+                </div>
+
+                <div class="common">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label>Accept terms and conditions</label>
+                </div>
+
+                <div class="common">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="04_modern_js_DOM.js"></script>
+</body>
+
+</html>
